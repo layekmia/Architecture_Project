@@ -1,0 +1,92 @@
+@media (max-width:991px) {
+    .quick-features{
+        flex-direction: column;
+    }
+    .quick-features .right .content{
+        width: 100%;
+        text-align: center;
+    }
+    .title-br{
+        display: none;
+    }
+    .quick-features .right .content .details{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Feature sectoin */
+    .featurs-section{
+        flex-direction: column-reverse;
+    }
+    .experience-card{
+        left: 50% ;
+        transform: translateX(-50%);
+        width: 180px;
+        height: 100px;
+        font-size: 5rem;
+    }
+
+    /* Facts card */
+    .facts-container{
+        justify-content: space-evenly;
+        row-gap: 30px;
+    }
+    .facts-container .facts-card{
+        flex-basis: calc(50% - 50px);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    nav .logo{
+        font-size: 3.5rem;
+    }
+    nav .menu{
+        position: absolute;
+        flex-direction: column;
+        top: 60px;
+        right: -100%;
+        background: var(--orange-color);
+        width: 200px;
+        gap: 20px;
+        text-align: center;
+        padding: 20px 0;
+        border-radius: 8px 0 0 8px;
+        transition: 300ms ease-in-out;
+        /* transform: translateX(100%); */
+        /* display: none; */
+        
+    }
+    nav .menu-show{
+        right: 0;
+        /* transform: translateX(0); */
+        /* display: block; */
+    }
+    nav .menu a{
+        color: white;
+    }
+    nav .menu-bars{
+        display: block;
+        font-size: 3rem;
+        color: var(--primary-text-color);
+    }
+    .hero-content .title {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    /* Hero section */
+    .quick-features .right .content .title{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    /* *======== some Facts ======= */
+    .facts-container .facts-card{
+        flex-basis: 100%;
+    }
+    .sponser-section .sponser-logo{
+        justify-content: center;
+        gap: 20px;
+    }
+}

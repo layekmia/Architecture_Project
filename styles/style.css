@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --orange-color: #ff900e;
+  --light-orange-color: rgba(255, 144, 14, 0.1);
+  --primary-text-color: #131313;
+  --light-dark-color: #424242;
+  --gray-dark-color: #727272;
+  --white-color: #fff;
+  --scale-factor: 0.71;
+}
+html {
+  font-size: 44.375%; /* Sets base font size to 71% of the design's base font size. 
+                          This makes 1rem equal to 10px for easier scaling and calculations. 
+                          (62.5% = 10px; reduced by 29% = 44.375%) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 2.1rem 2.5rem;
+  background: var(--orange-color);
+  color: var(--white-color);
+  font-family: Work Sans;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: calc(1480px * var(--scale-factor));
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: var(--primary-text-color);
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5.3rem;
+}
+p.details, p {
+  color: var(--gray-dark-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+/* * Header section */
+header {
+  background: var(--light-orange-color);
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+  margin-bottom: 60px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  color: var(--primary-text-color);
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+nav .menu {
+  display: flex;
+  gap: 50px;
+}
+.menu li a {
+  color: var(--light-dark-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.menu-bars {
+  display: none;
+}
+
+/* * Hero section */
+
+.hero-section .hero-content {
+  text-align: center;
+  margin: 72px 0 35px 0;
+}
+.hero-content .title {
+  color: var(--primary-text-color);
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 7.5rem;
+  text-align: center;
+}
+.hero-content .details {
+  color: var(--gray-dark-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-align: center;
+  margin: 3.2rem 0;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+/* * quick feature section */
+.quick-features {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  max-width: calc(1358px * var(--scale-factor));
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+.quick-features .left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+.quick-features .left img {
+  width: 100%;
+}
+
+.quick-features .right .content .title {
+  margin-bottom: 2.4rem;
+}
+
+.quick-features .right .content .title .gray-color {
+  color: var(--gray-dark-color);
+}
+.quick-features .right .content .title .orange-color {
+  color: var(--orange-color);
+}
+.quick-features .right .content .details {
+  color: var(--gray-dark-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-align: left;
+  margin-bottom: 3.2rem;
+  max-width: calc(537px * var(--scale-factor));
+}
+
+/* * Featurs section */
+.featurs-section {
+  display: flex;
+  align-items: center;
+  margin: 90px auto 110px auto;
+  gap: 100px;
+}
+.featurs-section .feature-content {
+  max-width: calc(586px * var(--scale-factor));
+}
+
+.featurs-section .feature-content .title {
+  border-left: 5px solid var(--orange-color);
+  padding-left: 2.1rem;
+}
+
+.featurs-section .feature-content .details {
+  text-align: left;
+  margin: 2.4rem 0 3.2rem 0;
+}
+.featurs-section .feature-content .feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.featurs-section .feature-content .feature-cards .feature-card {
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+.featurs-section .feature-content .feature-cards .feature-card h2 {
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.3rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.featurs-section .feature-image {
+  position: relative;
+}
+
+.featurs-section .feature-image img {
+  width: 100%;
+}
+.experience-card {
+  position: absolute;
+  bottom: -50px;
+  left: -10%;
+  width: 242px;
+  height: 140px;
+  background: var(--orange-color);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  font-size: 6.5rem;
+  font-weight: bold;
+}
+.experience-card .content p {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* * Some Facts section */
+.some-facts-section {
+  margin-bottom: 150px;
+}
+.some-facts-section .title {
+  margin-bottom: 2.4rem;
+}
+.some-facts-section .details {
+  margin-bottom: 71px;
+}
+
+.facts-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.facts-container .facts-card {
+  flex-basis: calc(25% - 60px);
+  height: 171px;
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.facts-card span {
+  color: var(--light-dark-color);
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 5.3rem;
+}
+.facts-card p {
+  color: var(--gray-dark-color);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.3rem;
+}
+.facts-card img {
+  width: 31px;
+}
+
+/* * sponser section */
+
+.sponser-section .content {
+  max-width: calc(542px * var(--scale-factor));
+  margin: 0 auto;
+}
+.sponser-section .title {
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+.sponser-section .details {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.sponser-section .sponser-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.sponser-section .sponser-logo img {
+  width: 120px;
+}
+
+/* * Footer section style */
+footer {
+  text-align: center;
+  background: var(--light-orange-color);
+  border-radius: 8px;
+}
+footer.wrapper{
+    margin-bottom: 100px;
+}
+footer p {
+  color: var(--light-dark-color);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  text-align: center;
+  padding: 3rem 0;
+}
